@@ -1,5 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
+function DateConverter({ dateInput }) {
+  const convertDate = (input) => {
+    if (!input) return '';
+    const date = new Date(`01-${input}`);
+    const options = { month: 'long', year: 'numeric' };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+  };
+
+  const formattedDate = convertDate(dateInput);
+
+  return (
+    <div>
+      <p>Original Date: {dateInput}</p>
+      <p>Formatted Date: {formattedDate}</p>
+    </div>
+  );
+}
+
+
+
 
 export default function WorkExperience() {
     const [jobs, setJobs] = useState([]);

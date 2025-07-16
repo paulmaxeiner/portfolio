@@ -1,13 +1,12 @@
 import React from 'react';
 
 import NavbarTabs from './components/NavbarTabs.jsx';
-import WorkExperience from './components/resume.jsx';
 
 function App() {
   return (
     
     <div className="min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans">
-      <h1 className="text-4xl text-red-600">Tailwind is working</h1>
+      <h1 className="text-sm text-red-600">Tailwind is working</h1>
       <main className="max-w-5xl mx-auto px-4">
         <NavbarTabs />
         </main>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import WorkExperience from './resume.jsx';
+import Education from './Education.jsx';
 import Hero from './Hero.jsx';
 
 const tabs = [
@@ -14,15 +15,15 @@ export default function NavbarTabs() {
 
   return (
     <div className="mb-6">
-      <div className="border-b">
-        <ul className="flex flex-wrap text-sm font-medium text-center" role="tablist">
+      <div className="justify-center">
+        <ul className="flex flex-wrap text-sm font-medium justify-center items-center" role="tablist">
           {tabs.map((tab) => (
             <li className="me-2" key={tab.id} role="presentation">
               <button
                 onClick={() => setActiveTab(tab.id)}
                 className={`inline-block p-4 border-b-2 rounded-t-lg ${
                   activeTab === tab.id
-                    ? 'text-purple-600 border-purple-600'
+                    ? 'text-blue-600 border-blue-600'
                     : 'text-gray-500 hover:text-gray-600 hover:border-gray-300'
                 }`}
                 role="tab"
@@ -51,6 +52,7 @@ export default function NavbarTabs() {
           <div>
             <h2 className="text-xl font-semibold mb-2">Resume</h2>
             <p>You can link to a PDF here or list bullet points.</p>
+            <Education />
             <WorkExperience />
           </div>
         )}

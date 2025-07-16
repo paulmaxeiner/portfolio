@@ -1,0 +1,62 @@
+[
+    {
+        "institution": "Washington University in St. Louis",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/WashU_St._Louis_seal.svg/300px-WashU_St._Louis_seal.svg.png?20170918144916",
+        "school": "Olin Business School",
+        "degree": "Bachelor of Science in Business Administration (BSBA)",
+        "majors": [
+            "Financial Engineering",
+            "Economics & Strategy"
+        ],
+        "minors": [
+            "Computer Science"
+        ],
+        "location": "St. Louis, MO",
+        "link": "https://www.washu.edu",
+        "startDate": "08-2023",
+        "endDate": "05-2027",
+        "GPA": "3.79/4.0",
+        "description": "Built and deployed Power BI dashboard to assess international distribution partners across 50+ countries",
+        "honors": [
+            "Dean's List (all semesters)",
+            "1st Place, Olin Business School Case Competition"
+        ],
+        "courses": [
+            "Statistical Methods with Applications to Financial Engineering (ESE 4261)",
+            "JavaScript",
+            "DAX",
+            "SQL"
+        ],
+        "highlight": true
+    },
+    {
+        "institution": "New Albany High School",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/New_Albany_Seal.JPG?20100315025012",
+        "school": "n/a",
+        "degree": "High School Diploma",
+        "majors": "n/a",
+        "minors": "n/a",
+        "location": "New Albany, OH",
+        "link": "https://hs.napls.us",
+        "startDate": "08-2019",
+        "endDate": "05-2023",
+        "GPA": "4.35",
+        "description": "Built and deployed Power BI dashboard to assess international distribution partners across 50+ countries",
+        "honors": [
+            "Summa Cum Laude",
+            "Honors Diploma",
+            "National Honor Society",
+            "National Merit Commended Scholar",
+            "AP Scholar with Distinction"
+        ],
+        "courses": [
+            "AP Calculus AB",
+            "AP Statistics",
+            "AP Computer Science A",
+            "AP Computer Science Principles",
+            "AP Macroeconomics",
+            "AP Microeconomics"
+        ],
+        "highlight": true
+    }
+]
