@@ -1,18 +1,24 @@
 [
   {
     "company": "Hunter Engineering Company",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hunter_Engineering_Company_logo.svg",
+    "link": "https://www.hunter.com",
     "position": "Business Development Intern",
     "location": "St. Louis, MO",
-    "startDate": "2024-05",
-    "endDate": "2024-08",
+    "startDate": "05-2025",
+    "endDate": "08-Present",
     "description": [
       "Built and deployed Power BI dashboard to assess international distribution partners across 50+ countries",
       "Collaborated with regional managers to refine go-to-market strategies",
       "Incorporated metrics such as sales growth, VIO data, and service coverage to score partner performance"
     ],
-    "technologies": ["Python", "JavaScript", "DAX", "SQL"],
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hunter_Engineering_Company_logo.svg",
-    "link": "https://www.hunter.com",
+    "skills": [
+      "International Business Development",
+      "Data Analysis",
+      "Executive Presentations",
+      "Strategy"
+    ],
+    "technologies": ["PowerBI", "DAX", "SQL"],
     "highlight": true
   },
   {

@@ -4,7 +4,12 @@ export default function Hero() {
 
     return (
 <section className="bg-white text-gray-800 dark:bg-gray-900 dark:text-white lg:grid lg:h-screen lg:place-content-center">
-  <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+  <div className="mx-auto w-screen max-w-screen-xl px-4 py-8 sm:px-6 sm:py-24 lg:px-6 lg:py-16">
+    <img
+  src="https://avatars.githubusercontent.com/u/156957669?v=4"
+  alt="Profile"
+  className="w-24 h-24 rounded-full object-cover mb-6"
+/>
     <div className="max-w-prose text-left">
       <h1 className="text-4xl font-bold  sm:text-5xl">
         Understand user flow and

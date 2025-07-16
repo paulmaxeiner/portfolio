@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NavbarTabs from './components/NavbarTabs.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <h1 className="text-4xl font-bold">Paul Maxeiner</h1>
         <p className="text-lg text-gray-600">My Portfolio</p>
       </header>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

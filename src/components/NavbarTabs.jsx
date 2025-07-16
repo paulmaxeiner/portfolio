@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import WorkExperience from './resume.jsx';
 import Education from './Education.jsx';
 import Hero from './Hero.jsx';
+import About from './About.jsx';
 
 const tabs = [
   { id: 'home', label: 'Home' },
@@ -46,12 +47,13 @@ export default function NavbarTabs() {
           <div>
             <h2 className="text-xl font-semibold">About Me</h2>
             <p>This is the about section with a short bio or background info.</p>
+            <About />
           </div>
         )}
         {activeTab === 'resume' && (
           <div>
             <h2 className="text-xl font-semibold mb-2">Resume</h2>
-            <p>You can link to a PDF here or list bullet points.</p>
+            <p>Click on any of my experiences to learn more!</p>
             <Education />
             <WorkExperience />
           </div>
