@@ -1,0 +1,18 @@
+[
+  {
+    "company": "Hunter Engineering Company",
+    "position": "Business Development Intern",
+    "location": "St. Louis, MO",
+    "startDate": "2024-05",
+    "endDate": "2024-08",
+    "description": [
+      "Built and deployed Power BI dashboard...",
+      "Collaborated with regional managers...",
+      "Used VIO data to score partner performance"
+    ],
+    "technologies": ["Power BI", "Excel"],
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hunter_Engineering_Company_logo.svg",
+    "link": "https://www.hunter.com",
+    "highlight": true
+  }
+]
