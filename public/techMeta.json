@@ -1,0 +1,32 @@
+{
+  "React": {
+    "icon": "devicon-react-original",
+    "bg": "bg-cyan-100",
+    "text": "text-cyan-800"
+  },
+  "JavaScript": {
+    "icon": "devicon-javascript-plain",
+    "bg": "bg-yellow-100",
+    "text": "text-yellow-800"
+  },
+  "Tailwind": {
+    "icon": "devicon-tailwindcss-plain",
+    "bg": "bg-sky-100",
+    "text": "text-sky-800"
+  },
+  "GitHub": {
+    "icon": "devicon-github-original",
+    "bg": "bg-gray-200",
+    "text": "text-gray-800"
+  },
+  "PowerBI": {
+    "icon": "",
+    "bg": "bg-yellow-200",
+    "text": "text-yellow-800"
+  },
+  "Python": {
+    "icon": "devicon-python-plain",
+    "bg": "bg-yellow-200",
+    "text": "text-yellow-800"
+  }
+}

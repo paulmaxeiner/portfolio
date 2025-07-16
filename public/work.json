@@ -6,13 +6,29 @@
     "startDate": "2024-05",
     "endDate": "2024-08",
     "description": [
-      "Built and deployed Power BI dashboard...",
-      "Collaborated with regional managers...",
-      "Used VIO data to score partner performance"
+      "Built and deployed Power BI dashboard to assess international distribution partners across 50+ countries",
+      "Collaborated with regional managers to refine go-to-market strategies",
+      "Incorporated metrics such as sales growth, VIO data, and service coverage to score partner performance"
     ],
-    "technologies": ["Power BI", "Excel"],
+    "technologies": ["Python", "JavaScript", "DAX", "SQL"],
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hunter_Engineering_Company_logo.svg",
     "link": "https://www.hunter.com",
     "highlight": true
+  },
+  {
+    "company": "Starbucks",
+    "position": "Barista",
+    "location": "St. Louis, MO",
+    "startDate": "2023-01",
+    "endDate": "2024-03",
+    "description": [
+      "Prepared beverages and food orders while managing high-volume rush periods",
+      "Built strong rapport with regular customers and maintained high partner satisfaction",
+      "Trained new partners on register, bar, and store operations"
+    ],
+    "technologies": [],
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Starbucks_Corporation_Logo_2011.svg",
+    "link": "https://www.starbucks.com",
+    "highlight": false
   }
 ]

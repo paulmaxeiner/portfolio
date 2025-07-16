@@ -1,48 +1,88 @@
 import React, { useEffect, useState } from 'react';
 
+
 export default function WorkExperience() {
-  const [jobs, setJobs] = useState([]);
+    const [jobs, setJobs] = useState([]);
+    const [techMeta, setTechMeta] = useState({});
 
-  useEffect(() => {
-    fetch('/work.json')
-      .then((res) => res.json())
-      .then((data) => setJobs(data))
-      .catch((err) => console.error('Error loading work.json:', err));
-  }, []);
+    useEffect(() => {
+        fetch('/work.json')
+            .then((res) => res.json())
+            .then(setJobs)
+            .catch((err) => console.error('Failed to load work history:', err));
 
-  return (
-    <section className="max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
-      {jobs.map((job, index) => (
-        <div
-          key={index}
-          className={`bg-white p-6 mb-6 shadow-md rounded-lg border-l-4 ${
-            job.highlight ? 'border-green-500' : 'border-gray-300'
-          }`}
-        >
-          <div className="flex items-center gap-4">
-            <img src={job.logoUrl} alt={`${job.company} logo`} className="h-10" />
-            <h3 className="text-xl font-semibold">
-              <a href={job.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                {job.position} at {job.company}
-              </a>
-            </h3>
-          </div>
-          <p className="text-sm text-gray-500 mt-1">
-            {job.location} — {job.startDate} to {job.endDate}
-          </p>
-          <ul className="mt-3 list-disc list-inside space-y-1">
-            {job.description.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-          {job.technologies.length > 0 && (
-            <p className="mt-3 text-sm">
-              <strong>Technologies:</strong> {job.technologies.join(', ')}
-            </p>
-          )}
-        </div>
-      ))}
-    </section>
-  );
+        fetch('/techMeta.json')
+            .then((res) => res.json())
+            .then(setTechMeta)
+            .catch((err) => console.error('Failed to load tech metadata:', err));
+    }, []);
+
+    return (
+        <section className="max-w-4xl mx-auto px-4 py-8">
+            <h2 className="text-3xl font-bold mb-6 text-center">Work Experience</h2>
+            <div className="space-y-6">
+                {jobs.map((job, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-col justify-between gap-4 p-6 rounded-xl border border-gray-200 bg-white shadow-sm dark:bg-gray-900 dark:border-gray-700"
+                    >
+                        {/* Top row: logo, dates, position */}
+                        <div className="flex gap-4 items-start">
+                            <img
+                                src={job.logoUrl}
+                                alt={`${job.company} logo`}
+                                className="w-10 h-10 mt-1 shrink-0"
+                            />
+                            <div className="flex-1">
+                                <p className="text-sm text-gray-500 dark:text-gray-400">
+                                    {job.startDate} – {job.endDate}
+                                </p>
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                                    {job.company}
+                                </h3>
+                                <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                                    {job.position}
+                                </h3>
+                                <p className="mt-2 text-gray-700 dark:text-gray-300">
+                                    {job.description[0]}
+                                </p>
+
+                                {job.description.length > 1 && (
+                                    <ul className="mt-4 list-disc list-inside space-y-1 text-gray-700 dark:text-gray-200">
+                                        {job.description.slice(1).map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Bottom row: tech badges */}
+                        {job.technologies.length > 0 && (
+                            <div className="flex flex-wrap gap-2 pt-4 mt-auto border-t border-gray-100 dark:border-gray-800">
+                                {job.technologies.map((tech, i) => {
+                                    const meta = techMeta[tech] || {
+                                        icon: '',
+                                        bg: 'bg-gray-200',
+                                        text: 'text-gray-800'
+                                    };
+
+                                    return (
+                                        <span
+                                            key={i}
+                                            className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium ${meta.bg} ${meta.text}`}
+                                        >
+                                            {meta.icon && <i className={`${meta.icon} text-base`} />}
+                                            {tech}
+                                        </span>
+                                    );
+                                })}
+                            </div>
+                        )}
+                    </div>
+
+                ))}
+            </div>
+        </section>
+    );
 }
