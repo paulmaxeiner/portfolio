@@ -1,4 +1,4 @@
-{
+[
     {
         "name": "Amazon Boards Case Competition",
         "date": "11-2023",
@@ -43,4 +43,4 @@
         "technologies": ["HTML", "CSS", "JavaScript", "React", "Tailwind"],
         "description": "Used Black-Scholes"
     }
-}
+]

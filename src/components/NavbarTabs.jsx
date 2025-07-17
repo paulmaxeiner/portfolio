@@ -3,10 +3,12 @@ import WorkExperience from './resume.jsx';
 import Education from './Education.jsx';
 import Hero from './Hero.jsx';
 import About from './About.jsx';
+import Projects from './Projects.jsx';
 
 const tabs = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'projects', label: 'Projects' },
   { id: 'resume', label: 'Resume' },
   { id: 'contact', label: 'Contact' },
 ];
@@ -48,6 +50,13 @@ export default function NavbarTabs() {
             <h2 className="text-xl font-semibold">About Me</h2>
             <p>This is the about section with a short bio or background info.</p>
             <About />
+          </div>
+        )}
+        {activeTab === 'projects' && (
+          <div>
+            <h2 className="text-xl font-semibold mb-2">Projects</h2>
+            <p>This is the about section with a short bio or background info.</p>
+            <Projects />
           </div>
         )}
         {activeTab === 'resume' && (
