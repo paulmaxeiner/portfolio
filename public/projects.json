@@ -2,18 +2,18 @@
     {
         "name": "Amazon Boards Case Competition",
         "date": "11-2023",
-        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "thumbnail": "./public/numpy.py.png",
         "link": "https://www.amazon.com",
         "image1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
         "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
         "image3": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
-        "technologies": ["Blender", "PowerPoint", "Photoshop", "Illustrator"],
-        "description": "Developed a comprehensive business strategy for Amazon Boards, focusing on market expansion and product innovation. Presented findings to a panel of judges, receiving positive feedback for strategic insights and presentation skills."
+        "technologies": ["Blender", "PowerPoint", "Adobe Photoshop", "Adobe Illustrator"],
+        "description": "Used Black-Scholes"
     },
     {
         "name": "Options Pricing Calculator",
         "date": "07-2025",
-        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "thumbnail": "./public/numpy.py.png",
         "link": "https://www.amazon.com",
         "image1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
         "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",

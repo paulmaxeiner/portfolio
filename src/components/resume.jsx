@@ -79,7 +79,7 @@ export default function WorkExperience() {
 
                         {/* Bottom row: tech badges */}
                         {job.technologies.length > 0 && (
-                            <div className="flex flex-wrap gap-2 pt-4 mt-auto border-t border-gray-100 dark:border-gray-800">
+                            <div className="flex flex-wrap gap-2 pt-4 mt-2 border-t border-gray-100 dark:border-gray-800">
                                 {job.technologies.map((tech, i) => {
                                     const meta = techMeta[tech] || {
                                         icon: '',
