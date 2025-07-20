@@ -4,13 +4,7 @@ import Education from './Education.jsx';
 import Hero from './Hero.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from '../../components/motion-primitives/accordion.tsx'
-import {TextEffect} from '../../components/motion-primitives/text-effect.tsx';
+import { motion } from "framer-motion";
 
 const tabs = [
   { id: 'home', label: 'Home' },
@@ -24,11 +18,14 @@ export default function NavbarTabs() {
   const [activeTab, setActiveTab] = useState('home');
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
 
       <header className="items-center top-0 z-50">
         <div className="mt-1 px-4 py-6">
           <div className="inline-flex items-center justify-center gap-4 mx-auto block">
+
+            <h3 className="justify-start">Paul Maxeiner</h3>
+
             {/* Tab Navigation */}
             <nav className="md:block">
               <ul
@@ -86,7 +83,7 @@ export default function NavbarTabs() {
 
 
 
-      <div className="mt-4 p-4 rounded-lg">
+      <div className="mt-4 p-4 rounded-lg ">
         {activeTab === 'home' && (
           <div>
             <Hero />
@@ -119,9 +116,13 @@ export default function NavbarTabs() {
           <div>
             <h2 className="text-xl font-semibold mb-2">Contact</h2>
             <p>Show email, LinkedIn, or a contact form here.</p>
-<TextEffect per='char' preset='fade'>
-      Animate your ideas with motion-primitives
-    </TextEffect>
+          <motion.div
+            className="mt-4 p-6 rounded-lg bg-white shadow-md dark:bg-gray-800"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          ><h1>Hello!</h1></motion.div>
+
           </div>
         )}
       </div>
