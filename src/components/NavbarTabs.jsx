@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import WorkExperience from './resume.jsx';
 import Education from './Education.jsx';
 import Hero from './Hero.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from '../../components/motion-primitives/accordion.tsx'
+import {TextEffect} from '../../components/motion-primitives/text-effect.tsx';
 
 const tabs = [
   { id: 'home', label: 'Home' },
@@ -30,6 +37,7 @@ export default function NavbarTabs() {
               >
                 {tabs.map((tab) => (
                   <li className="px-1" key={tab.id} role="presentation">
+                    
                     <button
                       onClick={() => setActiveTab(tab.id)}
                       className={`relative block px-4 py-2 rounded-full transition ${activeTab === tab.id
@@ -39,6 +47,7 @@ export default function NavbarTabs() {
                       role="tab"
                     >
                       {tab.label}
+                      
                     </button>
                   </li>
                 ))}
@@ -110,6 +119,9 @@ export default function NavbarTabs() {
           <div>
             <h2 className="text-xl font-semibold mb-2">Contact</h2>
             <p>Show email, LinkedIn, or a contact form here.</p>
+<TextEffect per='char' preset='fade'>
+      Animate your ideas with motion-primitives
+    </TextEffect>
           </div>
         )}
       </div>

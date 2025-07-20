@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 export default function Hero() {
 
     return (
-<section className="bg-white text-gray-800 dark:bg-gray-900 dark:text-white lg:grid lg:h-screen lg:place-content-center">
-  <div className="mx-auto w-screen max-w-screen-xl px-4 py-8 sm:px-6 sm:py-24 lg:px-6 lg:py-16">
+<section className="bg-white text-gray-800 dark:bg-gray-900 dark:text-white lg:grid lg:place-content-center">
+  <div className="mx-auto w-screen max-w-screen-xl px-4 py-2 sm:px-6 sm:py-2 lg:px-6 lg:py-8">
     <img
   src="https://avatars.githubusercontent.com/u/156957669?v=4"
   alt="Profile"
