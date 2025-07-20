@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NavbarTabs from './components/NavbarTabs.jsx';
+import MyTestimonials from './components/Testimonials.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
