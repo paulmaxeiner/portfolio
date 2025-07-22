@@ -14,6 +14,8 @@ const tabs = [
   { id: 'contact', label: 'Contact' },
 ];
 
+
+
 export default function NavbarTabs() {
   const [activeTab, setActiveTab] = useState('home');
 
