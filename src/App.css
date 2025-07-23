@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@config "../../../tailwind.config.js";
+
 @theme {
   --bg-gray-card: #fbfaf9; /* Light gray background for cards */
   --bg-gray-card-dark: #1f2937; /* Dark gray background for cards*/
@@ -20,6 +22,7 @@
   --color-info: #2563eb; /* Blue 600 */
   --color-link: #3b82f6; /* Blue 500 */
 }
+
 
 
 /*
