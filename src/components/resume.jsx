@@ -32,7 +32,7 @@ export default function WorkExperience() {
             whileHover={{ scale: 1.02 }}
             transition={{ layout: { duration: 0.3 } }}
             onClick={() => setExpandedIndex(index)}
-            className="cursor-pointer flex flex-col gap-4 p-6 rounded-xl border border-gray-200 bg-white shadow-sm dark:bg-gray-900 dark:border-gray-700"
+            className="cursor-pointer flex flex-col gap-4 p-6 rounded-xl bg-white dark:bg-gray-900 dark:border-gray-700"
           >
             <div className="flex gap-4 items-start">
               <motion.img

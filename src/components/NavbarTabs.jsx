@@ -94,7 +94,7 @@ export default function NavbarTabs() {
         )}
         {activeTab === 'about' && (
           <div>
-            <h2 className="text-xl font-semibold">About Me</h2>
+            <h2 className="text-xl font-semibold mb-2">About Me</h2>
             <p>This is the about section with a short bio or background info.</p>
             <About />
           </div>
@@ -108,10 +108,10 @@ export default function NavbarTabs() {
         )}
         {activeTab === 'resume' && (
           <div>
-            <h2 className="text-xl font-semibold mb-2">Resume</h2>
+            <h2 className="text-3xl font-semibold mb-2">Resume</h2>
             <p>Click on any of my experiences to learn more!</p>
-            <Education />
             <WorkExperience />
+            <Education />
           </div>
         )}
         {activeTab === 'contact' && (
