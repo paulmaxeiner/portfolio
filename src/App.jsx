@@ -2,6 +2,7 @@ import React from 'react';
 
 import NavbarTabs from './components/NavbarTabs.jsx';
 import Footer from './components/Footer.jsx';
+import './App.css'; // Ensure Tailwind CSS is imported
 
 function App() {
   return (
