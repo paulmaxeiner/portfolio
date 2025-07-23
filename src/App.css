@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@config "../../../tailwind.config.js";
+@config "./tailwind.config.js";
 
 @theme {
   --bg-gray-card: #fbfaf9; /* Light gray background for cards */
