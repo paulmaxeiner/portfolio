@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import WorkExperience from './resume.jsx';
-import Education from './Education.jsx';
+import Resume from './Resume.jsx';
 import Hero from './Hero.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
@@ -88,8 +87,7 @@ export default function NavbarTabs() {
           <div>
             <h2 className="text-3xl font-semibold mb-2">Resume</h2>
             <p>Click on any of my experiences to learn more!</p>
-            <WorkExperience />
-            <Education />
+            <Resume />
           </div>
         )}
         {activeTab === 'contact' && (
