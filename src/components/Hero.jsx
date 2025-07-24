@@ -13,12 +13,11 @@ export default function Hero() {
         />
         <div className="max-w-prose text-left">
           <h1 className="text-4xl font-bold  sm:text-5xl">
-            Hi, I'm Paul.
+            Developing data-based solutions that help grow businesses.
           </h1>
 
           <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi. Natus, provident
-            accusamus impedit minima harum corporis iusto.
+            I turn complex problems into elegent, data-driven solutions that power business growth and ensure user satisfaction.
           </p>
 
           <div className="mt-4 flex gap-4 sm:mt-6">
