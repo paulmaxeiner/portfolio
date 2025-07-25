@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import TechSection from './TechCard';
+import SkillScroll from './SkillScroll';
+import { useInView } from 'react-intersection-observer';
 
 const stats = [
   { value: '40+', label: 'projects' },
@@ -66,60 +69,26 @@ export default function Grid() {
   return (
     <div className="bg-white dark:bg-zinc-900 py-16 px-4 sm:px-8 lg:px-16">
 
+    
+      
+
+    
+
+
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
 {/* TECHNOLOGIES */}
-        <div className="bg-gray-100 dark:bg-zinc-800 rounded-xl shadow-md p-6">
-
-                {techMeta && Object.keys(techMeta).length > 0 && (
-        <div className="relative w-full overflow-hidden">
-          <motion.div
-            className="flex gap-4 py-2"
-            initial={{ x: 0 }}
-            animate={{ x: '-100%' }}
-            transition={{
-              repeat: Infinity,
-              duration: Object.keys(techMeta).length * 1.5,
-              ease: 'linear',
-            }}
-            style={{ width: 'max-content' }}
-          >
-            {/* Repeat items twice for seamless infinite scroll */}
-            {Object.entries(techMeta).map(([tech, meta], i) => (
-              <span
-                key={i}
-                className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium ${meta.bg || 'bg-gray-200 dark:bg-zinc-700'} ${meta.text || 'text-gray-800 dark:text-gray-100'}`}
-              >
-                {meta.icon && <i className={`${meta.icon} text-xs`} />}
-                {tech}
-              </span>
-            ))}
-          </motion.div>
-        </div>
-      )}
-
-          {techMeta && Object.keys(techMeta).length > 0 && (
-            <div className="flex flex-wrap gap-2 pt-2 mb-8">
-              {Object.entries(techMeta).map(([tech, meta], i) => (
-                <span
-                  key={i}
-                  className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium ${meta.bg || 'bg-gray-200 dark:bg-zinc-800'} ${meta.text || 'text-gray-800 dark:text-gray-100'}`}
-                >
-                  {meta.icon && <i className={`${meta.icon} text-xs`} />}
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
-
+        <div className="hero-card">
+          <TechSection/>
           <h3 className="text-2xl font-semibold text-black dark:text-white">{Object.keys(techMeta).length}</h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-300">technologies</p>
         </div>
         
 
 {/* EXPERIENCE */}
-        <div className="bg-gray-100 dark:bg-zinc-800 rounded-xl shadow-md p-6">
+        <div className="hero-card">
 
           <div className="flex flex-wrap gap-2 pt-2 mb-8">
             {jobs.map((job, index) => (
@@ -139,13 +108,14 @@ export default function Grid() {
         </div>
 
 {/* TECHNOLOGIES */}
-        <div className="bg-gray-100 dark:bg-zinc-800 rounded-xl shadow-md p-6">
+        <div className="hero-card">
+          <SkillScroll/>
           <h3 className="text-2xl font-semibold text-black dark:text-white">40+</h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-300">projects</p>
         </div>
 
 {/* TECHNOLOGIES */}
-        <div className="bg-gray-100 dark:bg-zinc-800 rounded-xl shadow-md p-6">
+        <div className="hero-card">
           <h3 className="text-2xl font-semibold text-black dark:text-white">40+</h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-300">projects</p>
         </div>

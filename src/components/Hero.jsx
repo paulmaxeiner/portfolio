@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Grid from './Grid.jsx';
+import About from './About.jsx'
 
 export default function Hero() {
 
@@ -40,6 +41,7 @@ export default function Hero() {
 
 
       <div>
+        <About />
         <Grid />
 
 

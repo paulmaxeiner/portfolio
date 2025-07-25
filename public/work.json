@@ -16,12 +16,17 @@
       "International Business Development",
       "Data Analysis",
       "Executive Presentations",
+      "Strategy",
+      "International Business Development",
+      "Data Analysis",
+      "Executive Presentations",
       "Strategy"
     ],
     "technologies": [
       "PowerBI",
       "DAX",
-      "SQL"
+      "SQL",
+      "International Business Development"
     ],
     "highlight": true
   },
@@ -59,6 +64,12 @@
       "Mastered operation of a 19th-century refractor telescope to accurately locate and observe planets, ensuring precision and clarity for students and faculty"
     ],
     "technologies": [],
+    "skills": [
+      "Test 1",
+      "Test 2",
+      "Test 3",
+      "Test 4"
+    ],
     "highlight": false
   },
   {
@@ -67,7 +78,7 @@
     "location": "Bridgeton, MO",
     "startDate": "05-2024",
     "endDate": "09-2024",
-    "logoUrl": "https://media.licdn.com/dms/image/v2/C4E0BAQGO_U2HbN_AKA/company-logo_200_200/company-logo_200_200/0/1631375880493?e=1756339200&v=beta&t=HYsG0ngVQO1UmpYBmdwIhDhmWa1kPnvwJtlEyJc94ws",
+    "logoUrl": "https://globalassets.hunter.com/images/assets/logo-hunter-white.svg/Zz0xMDQ1NjM2ODZhNzExMWVkYjczNTY2ZmJkYjdjZjg4OA==",
     "link": "https://www.hunter.com",
     "description": [
       "Researched over 40 501(c)(3) think tanks, assessed key features such as tax filings, revenue, expenses and fiscal responsibility ratings; wrote and designed a 70 page report profiling each organization",
@@ -76,6 +87,12 @@
     "technologies": [
       "Excel",
       "PowerPoint"
+    ],
+    "skills": [
+      "Test 1",
+      "Test 2",
+      "Test 3",
+      "Test 4"
     ],
     "highlight": false
   },
@@ -91,7 +108,13 @@
       "Trained new partners on register, bar, and store operations"
     ],
     "technologies": [],
-    "logoUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQEQxk9y2rk7Hw/company-logo_200_200/company-logo_200_200/0/1631316692275?e=1756339200&v=beta&t=jHiQ-8SaqDWnGVQt1PuYWzYZXGz7ifpfUhVtIgCgp9s",
+    "skills": [
+      "Test 1",
+      "Test 2",
+      "Test 3",
+      "Test 4"
+    ],
+    "logoUrl": "https://www.vectorlogo.zone/logos/starbucks/starbucks-icon.svg",
     "link": "https://www.starbucks.com",
     "highlight": false
   }

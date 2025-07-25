@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
+import { Calendar, MapPin } from 'lucide-react';
 
 export default function WorkExperience() {
   const [jobs, setJobs] = useState([]);
@@ -87,23 +88,24 @@ export default function WorkExperience() {
 
                   {/* Title and company */}
                   <div>
-                    <motion.h3
-                      layoutId={`position-${index}`}
-                      className="tracking-wide text-xl font-bold text-gray-900 dark:text-white"
-                    >
+
+                    <motion.h3 layoutId={`position-${index}`} className="tracking-wide text-xl font-bold text-gray-900 dark:text-white">
                       {job.position}
                     </motion.h3>
-                    <motion.h4
-                      layoutId={`company-${index}`}
-                      className="text-lg font-medium text-gray-900 dark:text-white"
-                    >
+
+                    <motion.h4 layoutId={`company-${index}`} className="text-lg font-medium text-gray-900 dark:text-white">
                       {job.company}
                     </motion.h4>
+
+                    <motion.h5 layoutId={`location-${index}`} className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      <MapPin className='w-[1em] h-[1em] inline-block' /> {job.location}
+                    </motion.h5>
+
                   </div>
 
                   {/* Date block: static by default, absolute on sm+ */}
                   <div className="mt- sm:mt-0 text-sm text-gray-500 dark:text-gray-400 sm:absolute sm:top-2 sm:right-4 sm:text-right">
-                    <p>{formatMonthYear(job.startDate)} – {formatMonthYear(job.endDate)}</p>
+                    <p><Calendar className='w-[1em] h-[1em] inline-block' /> {formatMonthYear(job.startDate)} – {formatMonthYear(job.endDate)}</p>
                     <p><DateDiff start={job.startDate} end={job.endDate} /></p>
                   </div>
                 </div>
@@ -156,7 +158,7 @@ export default function WorkExperience() {
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {expandedJob.startDate} – {expandedJob.endDate}
                     </p>
-                    
+
                     <motion.h3
                       layoutId={`position-${expandedIndex}`}
                       className="text-xl font-bold text-gray-700 dark:text-gray-300"
@@ -169,6 +171,11 @@ export default function WorkExperience() {
                     >
                       {expandedJob.company}
                     </motion.h4>
+
+                    <motion.h4 layoutId={`location-${expandedIndex}`} className="text-lg font-medium text-gray-900 dark:text-white">
+                      {expandedJob.location}
+                    </motion.h4>
+
                     <p className="mt-2 text-gray-700 dark:text-gray-300">
                       {expandedJob.description[0]}
                     </p>
@@ -203,14 +210,18 @@ export default function WorkExperience() {
                     })}
                   </div>
                 )}
+
                 {expandedJob.skills && expandedJob.skills.length > 0 && (
-                  <div className="mt-4">
-                    <h5 className="text-sm font-semibold text-gray-900 dark:text-white">Skills:</h5>
-                    <ul className="mt-2 list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+                  <div className="flex flex-wrap gap-2 pt-4 mt-4">
+                    <h5 className="text-sm font-semibold text-gray-900 dark:text-white">Skills</h5>
                       {expandedJob.skills.map((skill, i) => (
-                        <li key={i}>{skill}</li>
+                        <span
+                          key={i}
+                          className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-gray-200 dark:bg-zinc-700 text-gray-800 dark:text-gray-100"
+                        >
+                          {skill}
+                        </span>
                       ))}
-                    </ul>
                   </div>
                 )}
               </motion.div>
@@ -218,6 +229,7 @@ export default function WorkExperience() {
           )}
         </AnimatePresence>
       </motion.div>
+      <h2>See more work experiences...</h2>
     </section>
   );
 }

@@ -2,6 +2,16 @@
 
 @config "./tailwind.config.js";
 
+.hero-card {
+  @apply rounded-xl shadow-md p-6 text-gray-800;
+  background-color: #fbfaf9;
+}
+
+.dark .hero-card {
+  @apply bg-zinc-800 text-gray-100;
+}
+
+
 @theme {
   --bg-gray-card: #fbfaf9; /* Light gray background for cards */
   --bg-gray-card-dark: #1f2937; /* Dark gray background for cards*/
