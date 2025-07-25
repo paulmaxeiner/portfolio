@@ -224,6 +224,7 @@ export default function WorkExperience() {
                       ))}
                   </div>
                 )}
+
               </motion.div>
             </motion.div>
           )}

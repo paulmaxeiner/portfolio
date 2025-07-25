@@ -78,20 +78,3 @@ useEffect(() => {
 };
 
 export default SkillScroll;
-
-
-
-
-
-    <div className="relative w-full overflow-hidden">
-      <div className="flex gap-3 py-2">
-        {repeatedSkills.map((skill, i) => (
-          <span
-            key={i}
-            className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-200 dark:bg-zinc-700 text-gray-800 dark:text-gray-100"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
