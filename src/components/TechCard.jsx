@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation, useScroll, useMotionValueEvent, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const TechSection = () => {

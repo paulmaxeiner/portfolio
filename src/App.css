@@ -11,6 +11,23 @@
   @apply bg-zinc-800 text-gray-100;
 }
 
+.blinking-cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: currentColor;
+  animation: blink 1s steps(2, start) infinite;
+  margin-left: 2px;
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+
 
 @theme {
   --bg-gray-card: #fbfaf9; /* Light gray background for cards */
