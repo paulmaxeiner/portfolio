@@ -50,8 +50,7 @@ export default function Education() {
   }
 
   return (
-    <section className="max-w-4xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-8 text-left">Education</h2>
+    <section className="max-w-4xl mx-auto py-8">
 
       <div className="space-y-6">
         {schools.map((edu, i) => (

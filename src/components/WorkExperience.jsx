@@ -60,20 +60,20 @@ export default function WorkExperience() {
   const expandedJob = expandedIndex !== null ? jobs[expandedIndex] : null;
 
   return (
-    <section className="max-w-4xl mx-auto py-8">
-      <h2 className="text-3xl font-bold mb-6 text-left">Work Experience</h2>
+    <section className="max-w-4xl mx-auto">
       <motion.div layout className="space-y-6">
         {jobs.map((job, index) => (
           <motion.div
             key={index}
             layoutId={`card-${index}`}
             layout
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.00 }}
             transition={{ layout: { duration: 0.3 } }}
             onClick={() => setExpandedIndex(index)}
             className="relative cursor-pointer flex flex-col gap-4 p-6 rounded-xl bg-white dark:bg-gray-900 dark:border-gray-700"
           >
             <div className="flex gap-2 items-start flex-col sm:flex-row">
+              
               {/* Logo */}
               <motion.img
                 layoutId={`logo-${index}`}
@@ -83,6 +83,7 @@ export default function WorkExperience() {
               />
 
               <div className="flex-1 w-full">
+                
                 {/* Header row with job info and responsive date block */}
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full">
 

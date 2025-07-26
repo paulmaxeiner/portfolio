@@ -5,7 +5,7 @@ export default function AboutSection() {
     <section className="w-full px-6 py-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-        <div className="sticky top-10 self-start">
+        <div className="md:sticky top-10 self-start">
           <h1 className="text-4xl md:text-5xl font-bold text-zinc-800 dark:text-white leading-tight">
             From brewing coffee to building algorithms
           </h1>
@@ -38,6 +38,7 @@ export default function AboutSection() {
             In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.
           </p>
         </div>
+        
       </div>
     </section>
   );

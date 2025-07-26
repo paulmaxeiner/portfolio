@@ -1,79 +1,56 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { motion, useAnimate } from "framer-motion";
-import { cn } from "@/lib/utils"; // Optional: replace with your own utility or remove if unused
+import { cn } from "@/lib/utils"; // optional
 
 export const Button = ({ className, children, ...props }) => {
   const [scope, animate] = useAnimate();
-
-  const animateLoading = async () => {
-    await animate(
-      ".loader",
-      {
-        width: "20px",
-        scale: 1,
-        display: "block",
-      },
-      { duration: 0.2 }
-    );
-  };
-
-  const animateSuccess = async () => {
-    await animate(
-      ".loader",
-      {
-        width: "0px",
-        scale: 0,
-        display: "none",
-      },
-      { duration: 0.2 }
-    );
-    await animate(
-      ".check",
-      {
-        width: "20px",
-        scale: 1,
-        display: "block",
-      },
-      { duration: 0.2 }
-    );
-    await animate(
-      ".check",
-      {
-        width: "0px",
-        scale: 0,
-        display: "none",
-      },
-      { delay: 2, duration: 0.2 }
-    );
-  };
+  const [status, setStatus] = useState("idle"); // 'idle' | 'loading' | 'success'
 
   const handleClick = async (event) => {
-    await animateLoading();
-    await props.onClick?.(event);
-    await animateSuccess();
-  };
+    setStatus("loading");
 
-  const {
-    onClick,
-    onDrag,
-    onDragStart,
-    onDragEnd,
-    onAnimationStart,
-    onAnimationEnd,
-    ...buttonProps
-  } = props;
+    // Immediately go blue
+    await animate(scope.current, { backgroundColor: "#3b82f6" }, { duration: 0.2 });
+    await animate(".loader", { width: 20, scale: 1, display: "block" }, { duration: 0.2 });
+
+    const result = props.onClick?.(event);
+    await Promise.all([
+      result instanceof Promise ? result : Promise.resolve(),
+      new Promise((res) => setTimeout(res, 400)),
+    ]);
+
+    // Transition to green
+    await animate(".loader", { width: 0, scale: 0, display: "none" }, { duration: 0.2 });
+    await animate(".check", { width: 20, scale: 1, display: "block" }, { duration: 0.2 });
+    await animate(scope.current, { backgroundColor: "#22c55e" }, { duration: 0.2 });
+
+    await new Promise((res) => setTimeout(res, 2000));
+
+    // Reset to gray
+    await animate(".check", { width: 0, scale: 0, display: "none" }, { duration: 0.2 });
+    await animate(scope.current, { backgroundColor: "#6b7280" }, { duration: 0.2 });
+
+    setStatus("idle");
+  };
 
   return (
     <motion.button
-      layout
-      layoutId="button"
       ref={scope}
+      layout
+      onClick={handleClick}
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.2)",
+      }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
       className={cn(
-        "flex min-w-[120px] cursor-pointer items-center justify-center gap-2 rounded-full bg-green-500 px-4 py-2 font-medium text-white ring-offset-2 transition duration-200 hover:ring-2 hover:ring-green-500 dark:ring-offset-black",
+        "flex min-w-[120px] items-center justify-center gap-2 rounded-full bg-gray-500 px-4 py-2 font-medium text-white transition duration-300 ease-in-out focus:outline-none",
+        "hover:brightness-110 active:scale-95",
         className
       )}
-      {...buttonProps}
-      onClick={handleClick}
+      {...props}
     >
       <motion.div layout className="flex items-center gap-2">
         <Loader />
@@ -121,8 +98,7 @@ const CheckIcon = () => (
     strokeLinejoin="round"
     className="check text-white"
   >
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-    <path d="M9 12l2 2l4 -4" />
+    <circle cx="12" cy="12" r="9" />
+    <path d="M9 12l2 2l4-4" />
   </motion.svg>
 );
