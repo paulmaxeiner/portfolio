@@ -109,7 +109,9 @@ export default function Grid() {
 
 {/* TECHNOLOGIES */}
         <div className="hero-card">
-          <SkillScroll/>
+          <SkillScroll direction="left"/>
+          <SkillScroll direction="right"/>
+          <SkillScroll direction="left"/>
           <h3 className="text-2xl font-semibold text-black dark:text-white">40+</h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-300">projects</p>
         </div>

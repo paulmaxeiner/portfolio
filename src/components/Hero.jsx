@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Grid from './Grid.jsx';
 import About from './About.jsx'
 import Typewriter from './Typewriter.jsx';
+import Projects from './Projects.jsx';
+import ContactForm from './ContactForm.jsx';
 
 export default function Hero() {
 
@@ -16,7 +18,13 @@ export default function Hero() {
         />
         <div className="max-w-prose text-left">
           <h1 className="text-4xl font-bold  sm:text-5xl">
-            Creating powerful data-based solutions that help grow <Typewriter words={["portfolios.","businesses.","people."]}/>
+            Creating powerful data-based solutions that help grow <Typewriter 
+              words={[
+    { text: 'portfolios', gradient: 'from-blue-500 to-green-500' },
+    { text: 'businesses', gradient: 'from-red-500 to-blue-500' },
+    { text: 'people', gradient: 'from-indigo-500 to-purple-500' },
+  ]}
+            />
           </h1>
 
           <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
@@ -50,9 +58,10 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-black dark:text-white">
           Recent Projects
         </h1>
+        <Projects />
 
         <h1 className="text-3xl sm:text-5xl font-bold text-center mb-12 text-black dark:text-white">
-          Contact Me
+          Get in Touch
         </h1>
 
 

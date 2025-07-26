@@ -4,6 +4,7 @@ import Hero from './Hero.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
 import ThemeToggleButton from './ThemeToggleButton.jsx';
+import ContactForm from './ContactForm.jsx';
 import { motion } from "framer-motion";
 
 const tabs = [
@@ -100,6 +101,8 @@ export default function NavbarTabs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
           ><h1>Hello!</h1></motion.div>
+          <ContactForm />
+
 
           </div>
         )}

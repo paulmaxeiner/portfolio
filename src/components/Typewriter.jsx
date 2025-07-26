@@ -1,17 +1,24 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-const Typewriter = ({ words = [], typeSpeed = 100, pause = 1200 }) => {
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+const Typewriter = ({
+  words = [],
+  typeSpeed = 80,
+  pause = 1200,
+}) => {
+  const [index, setIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const currentWord = words[currentWordIndex] || '';
+
+  const current = words[index] || {};
+  const text = typeof current === 'string' ? current : current.text;
+  const gradient = typeof current === 'string' ? null : current.gradient;
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (!isDeleting) {
-        if (charIndex < currentWord.length) {
+        if (charIndex < text.length) {
           setCharIndex((prev) => prev + 1);
         } else {
           setTimeout(() => setIsDeleting(true), pause);
@@ -21,41 +28,45 @@ const Typewriter = ({ words = [], typeSpeed = 100, pause = 1200 }) => {
           setCharIndex((prev) => prev - 1);
         } else {
           setIsDeleting(false);
-          setCurrentWordIndex((prev) => (prev + 1) % words.length);
+          setIndex((prev) => (prev + 1) % words.length);
         }
       }
     }, isDeleting ? typeSpeed / 2 : typeSpeed);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, currentWord, typeSpeed, pause, words]);
+  }, [charIndex, isDeleting, text, pause, typeSpeed, words.length]);
 
-  const visibleChars = currentWord.slice(0, charIndex).split('');
+  const visibleChars = text.slice(0, charIndex).split('');
 
   return (
-    <span className="whitespace-nowrap align-baseline">
-      <AnimatePresence mode="popLayout">
+    <span className="inline-flex items-baseline whitespace-nowrap">
+      <span
+        className={`inline-flex bg-clip-text text-transparent ${
+          gradient ? `bg-gradient-to-r ${gradient}` : ''
+        }`}
+      >
         {visibleChars.map((char, i) => (
           <motion.span
-            key={`${char}-${i}`}
+            key={i}
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
             transition={{
-              duration: 0.15,
-              ease: 'easeInOut',
-              delay: i * 0.01,
+              duration: 0.2,
+              ease: 'easeOut',
+              delay: i * 0.02,
             }}
             className="inline-block"
           >
             {char}
           </motion.span>
         ))}
-      </AnimatePresence>
+      </span>
       <motion.span
-        className="ml-[1px] inline-block w-[1px] align-baseline bg-current animate-blink"
-        animate={{ opacity: [1, 0, 1] }}
-        transition={{ repeat: Infinity, duration: 1 }}
-      />
+  className="ml-1 inline-block w-[2px] h-[1em] bg-gray-600 dark:bg-white animate-blink"
+  animate={{ opacity: [1, 0, 1] }}
+  transition={{ repeat: Infinity, duration: 1 }}
+/>
+
     </span>
   );
 };
