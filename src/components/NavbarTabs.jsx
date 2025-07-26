@@ -64,12 +64,15 @@ export default function NavbarTabs() {
 
 
       <div className="mt-4 p-4 rounded-lg ">
+
+
         {activeTab === 'home' && (
           <div>
             <Hero />
           </div>
-
         )}
+
+
         {activeTab === 'about' && (
           <div>
             <h2 className="text-xl font-semibold mb-2">About Me</h2>
@@ -77,6 +80,8 @@ export default function NavbarTabs() {
             <About />
           </div>
         )}
+
+
         {activeTab === 'projects' && (
           <div>
             <h2 className="text-xl font-semibold mb-2">Projects</h2>
@@ -84,6 +89,8 @@ export default function NavbarTabs() {
             <Projects />
           </div>
         )}
+
+
         {activeTab === 'resume' && (
           <div>
             <h2 className="text-3xl font-semibold mb-2">Resume</h2>
@@ -91,6 +98,8 @@ export default function NavbarTabs() {
             <Resume />
           </div>
         )}
+
+
         {activeTab === 'contact' && (
           <div>
             <h2 className="text-xl font-semibold mb-2">Contact</h2>
@@ -106,6 +115,8 @@ export default function NavbarTabs() {
 
           </div>
         )}
+
+        
       </div>
     </div>
   );

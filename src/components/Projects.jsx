@@ -34,7 +34,7 @@ export default function Projects() {
           <motion.li
             key={idx}
             layoutId={`project-${idx}`}
-            className="group relative flex flex-col items-start cursor-pointer dark:bg-zinc-900 dark:text-white"
+            className="group relative flex flex-col items-start cursor-pointer dark:text-white"
             onClick={() => setSelectedProject({ ...project, idx })}
           >
             <img
@@ -44,7 +44,7 @@ export default function Projects() {
             />
 
             <h2 className="mt-4 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 dark:bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl" />
+              {/**This is the hover animation */} <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 dark:bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl" />
               <span className="relative z-10">{project.name || "Untitled Project"}</span>
             </h2>
 
