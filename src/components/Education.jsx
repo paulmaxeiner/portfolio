@@ -78,7 +78,7 @@ export default function Education() {
                     {edu.institution}
                   </h3>
 
-                  <h3 className="text-lg font-semibold dark:text-white text-gray-900">
+                  <h3 className="text-lg dark:text-white text-gray-900">
                     {edu.degree}
                   </h3>
 
