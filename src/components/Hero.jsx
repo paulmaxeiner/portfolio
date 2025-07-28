@@ -18,7 +18,7 @@ export default function Hero() {
           className="w-24 h-24 rounded-full object-cover mb-6"
         />
         <div className="max-w-prose text-left">
-          <h1 className="text-4xl font-bold  sm:text-5xl">
+          <h1 className="inter text-4xl font-bold  sm:text-5xl">
             Creating powerful data-based solutions that help grow <Typewriter
               words={[
                 { text: 'portfolios', gradient: 'from-blue-500 to-green-500' },

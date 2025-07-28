@@ -11,6 +11,11 @@
   @apply bg-zinc-800 text-gray-100;
 }
 
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
 .blinking-cursor {
   display: inline-block;
   width: 1px;
