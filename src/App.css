@@ -11,9 +11,27 @@
   @apply bg-zinc-800 text-gray-100;
 }
 
+
+
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+.section-head {
+  @apply text-3xl rounded w-max;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.square-card {
+  @apply bg-gray-100 w-max p-5 rounded aspect-square align-text-bottom;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-red-500 bg-clip-text text-transparent text-5xl font-bold;
 }
 
 .blinking-cursor {
