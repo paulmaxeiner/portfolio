@@ -4,7 +4,7 @@
     "logoUrl": "https://www.hunter.com/globalassets/hunter/header/hunter-logo-black-red.png",
     "link": "https://www.hunter.com",
     "position": "Business Development Intern",
-    "location": "St. Louis, MO",
+    "location": "Bridgeton, MO",
     "startDate": "5-2025",
     "endDate": "8-2025",
     "description": [
@@ -23,6 +23,7 @@
       "Strategy"
     ],
     "technologies": [
+      "HTML",
       "PowerBI",
       "DAX",
       "SQL",

@@ -25,10 +25,10 @@ export default function Projects() {
 
   
   return (
-    <div className="mt-16 sm:mt-20">
+    <div className="mt-5">
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-2 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-2"
       >
         {projects.map((project, idx) => (
           <motion.li
@@ -40,7 +40,7 @@ export default function Projects() {
             <img
               src={project.thumbnail || "/docs/images/blog/image-1.jpg"}
               alt="Project Thumbnail"
-              className="h-48 w-full rounded-lg object-cover shadow-md"
+              className="h-36 w-full rounded-lg object-cover shadow-md"
             />
 
             <h2 className="mt-4 text-base font-semibold text-zinc-800 dark:text-zinc-100">
