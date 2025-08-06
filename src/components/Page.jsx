@@ -26,7 +26,8 @@ export default function NavbarTabs() {
                 <ThemeToggleButton />
 
 
-                
+
+
 
                 <div className="flex items-center space-x-5">
 
@@ -59,10 +60,14 @@ export default function NavbarTabs() {
                             </a>
                         </button>
                     </div>
-                </div>
 
+                </div>
+                <span class="mt-5 flex items-center">
+                    <span class="h-px flex-1 bg-gray-300 dark:bg-gray-700"></span>
+                </span>
 
                 <section id="hero" className="pt-15">
+
                     <h1 className="inter text-2xl font-bold text-4xl">
                         Creating powerful data-based solutions that grow <Typewriter
                             words={[
@@ -72,10 +77,17 @@ export default function NavbarTabs() {
                             ]}
                         />
                     </h1>
+                    <span class="flex items-center mt-6">
+                        <span class="uppercase font-semibold inter shrink-0 pe-4 text-gray-900 dark:text-white">Welcome to my personal website</span>
+
+                    </span>
                 </section>
 
 
+
+
                 <section id="about">
+
                     <h1 className="section-head">About</h1>
                     <p>Hi, I’m Paul, a Financial Engineering student at WashU. I’m passionate about quantitative finance and love building data-driven strategies that bridge markets and math. I’ve worked in business development at Hunter Engineering and led teams at Starbucks, and now I’m diving deep into trading algorithms, stats, and all things quant.</p>
                 </section>
@@ -172,7 +184,7 @@ export default function NavbarTabs() {
                 <section id="contact">
                     <h1 className="section-head">Contact</h1>
                     <p className="mb-5">I am more than happy to talk about my work with other professionals or answer any questions about my skills or background. Fill out the form below, and let's keep in touch!</p>
-                    <ContactForm/>
+                    <ContactForm />
                 </section>
 
 
