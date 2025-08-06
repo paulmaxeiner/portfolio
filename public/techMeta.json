@@ -1,4 +1,29 @@
 {
+  "Python": {
+    "icon": "devicon-python-plain",
+    "bg": "bg-yellow-200",
+    "text": "text-yellow-800"
+  },
+  "NumPy": {
+    "icon": "devicon-numpy-plain",
+    "bg": "bg-purple-100",
+    "text": "text-purple-700"
+  },
+  "Matplotlib": {
+    "icon": "",
+    "bg": "bg-sky-100",
+    "text": "text-sky-800"
+  },
+  "Pandas": {
+    "icon": "devicon-pandas-plain",
+    "bg": "bg-purple-100",
+    "text": "text-purple-800"
+  },
+  "R": {
+    "icon": "devicon-r-plain",
+    "bg": "bg-blue-100",
+    "text": "text-blue-600"
+  },
   "HTML": {
     "icon": "devicon-html5-plain",
     "bg": "bg-orange-100",
@@ -35,29 +60,9 @@
     "text": "text-orange-800"
   },
   "PowerBI": {
-    "icon": "",  
+    "icon": "",
     "bg": "bg-yellow-200",
     "text": "text-yellow-800"
-  },
-  "Python": {
-    "icon": "devicon-python-plain",
-    "bg": "bg-yellow-200",
-    "text": "text-yellow-800"
-  },
-  "NumPy": {
-    "icon": "devicon-numpy-plain", 
-    "bg": "bg-purple-100",
-    "text": "text-purple-700"
-  },
-  "Matplotlib": {
-    "icon": "", 
-    "bg": "bg-sky-100",
-    "text": "text-sky-800"
-  },
-    "Pandas": {
-    "icon": "devicon-pandas-plain",
-    "bg": "bg-purple-100",
-    "text": "text-purple-800"
   },
   "Streamlit": {
     "icon": "devicon-streamlit-plain",
@@ -70,11 +75,11 @@
     "text": "text-cyan-800"
   },
   "PowerPoint": {
-    "icon": "",  
+    "icon": "",
     "bg": "bg-orange-100",
     "text": "text-orange-700"
   },
-"React": {
+  "React": {
     "icon": "devicon-react-original",
     "bg": "bg-cyan-100",
     "text": "text-cyan-800"
@@ -90,14 +95,8 @@
     "text": "text-gray-800"
   },
   "Blender": {
-  "icon": "devicon-blender-original",
-  "bg": "bg-orange-200",
-  "text": "text-orange-800"
-},
-  "R": {
-  "icon": "devicon-r-plain",
-  "bg": "bg-blue-100",
-  "text": "text-blue-600"
-}
-
+    "icon": "devicon-blender-original",
+    "bg": "bg-orange-200",
+    "text": "text-orange-800"
+  }
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, useAnimate } from "framer-motion";
+import { motion, useAnimate, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils"; // optional
 
 export const Button = ({ className, children, ...props }) => {
@@ -11,7 +11,7 @@ export const Button = ({ className, children, ...props }) => {
   const handleClick = async (event) => {
     setStatus("loading");
 
-    // Immediately go blue
+    // Blue + show loader
     await animate(scope.current, { backgroundColor: "#3b82f6" }, { duration: 0.2 });
     await animate(".loader", { width: 20, scale: 1, display: "block" }, { duration: 0.2 });
 
@@ -21,16 +21,20 @@ export const Button = ({ className, children, ...props }) => {
       new Promise((res) => setTimeout(res, 400)),
     ]);
 
-    // Transition to green
+    // Success transition
+    await animate(scope.current, { backgroundColor: "#22c55e" }, { duration: 0.2 });
     await animate(".loader", { width: 0, scale: 0, display: "none" }, { duration: 0.2 });
     await animate(".check", { width: 20, scale: 1, display: "block" }, { duration: 0.2 });
-    await animate(scope.current, { backgroundColor: "#22c55e" }, { duration: 0.2 });
+    
+
+    setStatus("success");
 
     await new Promise((res) => setTimeout(res, 2000));
 
-    // Reset to gray
-    await animate(".check", { width: 0, scale: 0, display: "none" }, { duration: 0.2 });
+    // Reset to idle
     await animate(scope.current, { backgroundColor: "#6b7280" }, { duration: 0.2 });
+    await animate(".check", { width: 0, scale: 0, display: "none" }, { duration: 0.2 });
+    
 
     setStatus("idle");
   };
@@ -46,16 +50,31 @@ export const Button = ({ className, children, ...props }) => {
       }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       className={cn(
-        "flex min-w-[120px] items-center justify-center gap-2 rounded-full bg-gray-500 px-4 py-2 font-medium text-white transition duration-300 ease-in-out focus:outline-none",
+        "flex min-w-[140px] items-center justify-center gap-2 rounded-full bg-gray-500 px-4 py-2 font-medium text-white transition duration-300 ease-in-out focus:outline-none",
         "hover:brightness-110 active:scale-95",
         className
       )}
       {...props}
     >
-      <motion.div layout className="flex items-center gap-2">
+      <motion.div layout className="flex items-center gap-2 relative">
         <Loader />
         <CheckIcon />
-        <motion.span layout>{children}</motion.span>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={status}
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.2 }}
+            className="" // keeps text position stable
+          >
+            {status === "loading"
+              ? "Loading"
+              : status === "success"
+              ? "Success"
+              : children}
+          </motion.span>
+        </AnimatePresence>
       </motion.div>
     </motion.button>
   );

@@ -31,6 +31,7 @@ export default function WorkExperience() {
         years -= 1;
         months += 12;
       }
+      
 
       return { years, months };
     };

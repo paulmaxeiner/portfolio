@@ -16,11 +16,7 @@
       "International Business Development",
       "Data Analysis",
       "Executive Presentations",
-      "Strategy",
-      "International Business Development",
-      "Data Analysis",
-      "Executive Presentations",
-      "Strategy"
+      "Corporate Strategy"
     ],
     "technologies": [
       "HTML",
@@ -117,6 +113,6 @@
     ],
     "logoUrl": "https://www.vectorlogo.zone/logos/starbucks/starbucks-icon.svg",
     "link": "https://www.starbucks.com",
-    "highlight": false
+    "highlight": true
   }
 ]

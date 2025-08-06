@@ -12,7 +12,7 @@ function App() {
 
 
       <div className="flex justify-center min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
-        <div className="w-full md:max-w-xl px-4 py-6rounded-lg shadow-md">
+        <div className="w-full md:max-w-xl px-4 py-6">
           <Page />
         </div>
       </div>

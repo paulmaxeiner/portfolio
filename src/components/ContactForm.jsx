@@ -6,7 +6,7 @@ export default function ContactForm() {
     <form className="space-y-8">
       <div className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-900">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-900 dark:text-white">
             Name
           </label>
           <input
@@ -15,12 +15,12 @@ export default function ContactForm() {
             type="text"
             autoComplete="name"
             required
-            className="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"
+            className="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 dark:bg-gray-700 dark:text-gray-200 shadow-sm outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-900">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-900 dark:text-white">
             Email
           </label>
           <input
@@ -29,12 +29,12 @@ export default function ContactForm() {
             type="email"
             autoComplete="email"
             required
-            className="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"
+            className="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 dark:bg-gray-700 dark:text-gray-200 shadow-sm outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-900">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-white">
             Message
           </label>
           <textarea
@@ -42,7 +42,7 @@ export default function ContactForm() {
             name="message"
             rows={4}
             required
-            className="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"
+            className="mt-1 block w-full rounded-md bg-white px-3 py-2 text-sm text-gray-900 dark:bg-gray-700 dark:text-gray-200 shadow-sm outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function ContactForm() {
       <div className="flex justify-end">
         <button
           type="submit"
-          className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Send
         </button>
