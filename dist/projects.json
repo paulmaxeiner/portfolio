@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Amazon Boards Case Competition",
+        "date": "11-2023",
+        "thumbnail": "./public/numpy.py.png",
+        "link": "https://www.amazon.com",
+        "image1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image3": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "technologies": ["Blender", "PowerPoint", "Adobe Photoshop", "Adobe Illustrator"],
+        "description": "Developed and presented a plan for Amazon to launch a new app that helps users organize & share their purchases."
+    },
+    {
+        "name": "Options Pricing Calculator",
+        "date": "07-2025",
+        "thumbnail": "./public/numpy.py.png",
+        "link": "https://www.amazon.com",
+        "image1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image3": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "technologies": ["Python", "NumPy", "Pandas"],
+        "description": "Used Black-Scholes"
+    },
+    {
+        "name": "Options Pricing Calculator",
+        "date": "11-2023",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "link": "https://www.amazon.com",
+        "image1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image3": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "technologies": ["Python", "NumPy", "Pandas", "Streamlit", "Plotly", "Matplotlib"],
+        "description": "Used Black-Scholes"
+    },
+    {
+        "name": "Personal Portfolio Website",
+        "date": "07-2025",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "link": "https://www.amazon.com",
+        "image1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "image3": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Amazon_logo.svg/1200px-Amazon_logo.svg.png",
+        "technologies": ["HTML", "CSS", "JavaScript", "React", "Tailwind"],
+        "description": "Used Black-Scholes"
+    }
+]

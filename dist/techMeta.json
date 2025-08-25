@@ -1,0 +1,102 @@
+{
+  "Python": {
+    "icon": "devicon-python-plain",
+    "bg": "bg-yellow-200",
+    "text": "text-yellow-800"
+  },
+  "NumPy": {
+    "icon": "devicon-numpy-plain",
+    "bg": "bg-purple-100",
+    "text": "text-purple-700"
+  },
+  "Matplotlib": {
+    "icon": "",
+    "bg": "bg-sky-100",
+    "text": "text-sky-800"
+  },
+  "Pandas": {
+    "icon": "devicon-pandas-plain",
+    "bg": "bg-purple-100",
+    "text": "text-purple-800"
+  },
+  "R": {
+    "icon": "devicon-r-plain",
+    "bg": "bg-blue-100",
+    "text": "text-blue-600"
+  },
+  "HTML": {
+    "icon": "devicon-html5-plain",
+    "bg": "bg-orange-100",
+    "text": "text-orange-600"
+  },
+  "CSS": {
+    "icon": "devicon-css3-plain",
+    "bg": "bg-blue-100",
+    "text": "text-blue-600"
+  },
+  "JavaScript": {
+    "icon": "devicon-javascript-plain",
+    "bg": "bg-yellow-100",
+    "text": "text-yellow-600"
+  },
+  "PHP": {
+    "icon": "devicon-php-plain",
+    "bg": "bg-indigo-100",
+    "text": "text-indigo-600"
+  },
+  "Ruby": {
+    "icon": "devicon-ruby-plain",
+    "bg": "bg-red-100",
+    "text": "text-red-600"
+  },
+  "Adobe Photoshop": {
+    "icon": "devicon-photoshop-plain",
+    "bg": "bg-blue-200",
+    "text": "text-blue-900"
+  },
+  "Adobe Illustrator": {
+    "icon": "devicon-illustrator-plain",
+    "bg": "bg-orange-200",
+    "text": "text-orange-800"
+  },
+  "PowerBI": {
+    "icon": "",
+    "bg": "bg-yellow-200",
+    "text": "text-yellow-800"
+  },
+  "Streamlit": {
+    "icon": "devicon-streamlit-plain",
+    "bg": "bg-pink-100",
+    "text": "text-pink-700"
+  },
+  "Plotly": {
+    "icon": "devicon-plotly-original",
+    "bg": "bg-cyan-100",
+    "text": "text-cyan-800"
+  },
+  "PowerPoint": {
+    "icon": "",
+    "bg": "bg-orange-100",
+    "text": "text-orange-700"
+  },
+  "React": {
+    "icon": "devicon-react-original",
+    "bg": "bg-cyan-100",
+    "text": "text-cyan-800"
+  },
+  "Tailwind": {
+    "icon": "devicon-tailwindcss-plain",
+    "bg": "bg-sky-100",
+    "text": "text-sky-800"
+  },
+  "GitHub": {
+    "icon": "devicon-github-original",
+    "bg": "bg-gray-200",
+    "text": "text-gray-800"
+  },
+  "Blender": {
+    "icon": "devicon-blender-original",
+    "bg": "bg-orange-200",
+    "text": "text-orange-800"
+  }
+}
