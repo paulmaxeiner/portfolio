@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Resume from './Resume.jsx';
+
 import Hero from './Hero.jsx';
+import Resume from './Resume.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
 import ThemeToggleButton from './ThemeToggleButton.jsx';
