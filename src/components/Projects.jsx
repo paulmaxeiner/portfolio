@@ -13,11 +13,11 @@ export default function Projects() {
   }
 
   useEffect(() => {
-    fetch('/projects.json')
+    fetch('./projects.json')
       .then((res) => res.json())
       .then(setProjects)
       .catch((err) => console.error('Failed to load project data:', err));
-    fetch('/techMeta.json')
+    fetch('./techMeta.json')
       .then((res) => res.json())
       .then(setTechMeta)
       .catch((err) => console.error('Failed to load tech metadata:', err));
