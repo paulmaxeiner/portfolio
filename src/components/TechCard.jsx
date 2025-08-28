@@ -4,7 +4,7 @@ const TechSection = () => {
   const [techMeta, setTechMeta] = useState({});
 
   useEffect(() => {
-    fetch('/techMeta.json')
+    fetch('/portfolio/techMeta.json')
       .then((res) => res.json())
       .then((data) => setTechMeta(data))
       .catch((err) => console.error('Failed to load techMeta:', err));
