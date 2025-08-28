@@ -42,12 +42,12 @@ export default function WorkExperience() {
   }
 
   useEffect(() => {
-    fetch('public/work.json')
+    fetch('./work.json')
       .then((res) => res.json())
       .then(setJobs)
       .catch((err) => console.error('Failed to load work history:', err));
 
-    fetch('public/techMeta.json')
+    fetch('./techMeta.json')
       .then((res) => res.json())
       .then(setTechMeta)
       .catch((err) => console.error('Failed to load tech metadata:', err));

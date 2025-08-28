@@ -4,7 +4,7 @@ export default function Education() {
   const [schools, setSchools] = useState([]);
 
   useEffect(() => {
-    fetch('/education.json')
+    fetch('./education.json')
       .then((res) => res.json())
       .then(setSchools)
       .catch((err) => console.error('Failed to load education data:', err));
