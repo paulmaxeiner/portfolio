@@ -6,7 +6,7 @@ const SkillScroll = ({ direction = 'left', speed = 40 }) => {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    fetch('/work.json')
+    fetch('./work.json')
       .then((res) => res.json())
       .then((data) => {
         const flatSkills = data.flatMap((job) => job.skills || []);
