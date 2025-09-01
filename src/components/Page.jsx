@@ -45,7 +45,7 @@ export default function NavbarTabs() {
                         </span>
 
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                            Financial Engineering @ WashU - Test
+                            Financial Engineering @ WashU
                         </span>
 
 
@@ -68,15 +68,12 @@ export default function NavbarTabs() {
                 </span>
 
                 <section id="hero" className="pt-15">
+                    
 
                     <h1 className="inter text-2xl font-bold text-4xl">
-                        Creating powerful data-based solutions that grow <Typewriter
-                            words={[
-                                { text: 'portfolios', gradient: 'from-blue-500 to-green-500' },
-                                { text: 'businesses', gradient: 'from-red-500 to-blue-500' },
-                                { text: 'people', gradient: 'from-indigo-500 to-purple-500' },
-                            ]}
-                        />
+                        Creating powerful data-based solutions that grow <LettersPullUp
+                        words ={ ['portfolios', 'businesses', 'people']}
+                    />
                     </h1>
                     <span class="flex items-center mt-6">
                         <span class="uppercase font-semibold inter shrink-0 pe-4 text-gray-900 dark:text-white">Welcome to my personal website</span>
