@@ -5,20 +5,18 @@ import React, { useRef, useState, useEffect } from 'react';
 
 export function LettersPullUp({
   words = [],
-  className = '',
-  intervalMs = 3000,   // how long each word stays
-  letterDelay = 0.05,  // per-letter stagger
+  className = 'align-baseline',
+  intervalMs = 3000,
+  letterDelay = 0.05,
 }) {
   const [index, setIndex] = useState(0);
   const wrapperRef = useRef(null);
-
-  // Attach inView to a stable wrapper that never unmounts
   const isInView = useInView(wrapperRef, { once: false });
 
   useEffect(() => {
     if (!isInView || words.length === 0) return;
     const id = setInterval(() => {
-      setIndex((i) => (i + 1) % words.length); // infinite loop
+      setIndex((i) => (i + 1) % words.length);
     }, intervalMs);
     return () => clearInterval(id);
   }, [isInView, words.length, intervalMs]);
@@ -36,17 +34,14 @@ export function LettersPullUp({
   };
 
   return (
-    <span ref={wrapperRef} className="inline-flex">
-      <AnimatePresence mode="sync"> {/* enter & exit overlap */}
+    <span ref={wrapperRef} className="inline-flex items-baseline">
+      <AnimatePresence mode="wait">
         <motion.span
-          key={index} // remount per word to re-trigger letter animation
+          key={index}
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 0.4 } }}   // crossfade in
-          exit={{ opacity: 0, transition: { duration: 0.4 } }}      // crossfade out
-          className={cn(
-            'inline-block',
-            className
-          )}
+          animate={{ opacity: 1, transition: { duration: 0.4 } }}
+          exit={{ opacity: 0, transition: { duration: 0.4 } }}
+          className={cn('inline-flex items-baseline leading-[1em]', className)}
         >
           {chars.map((ch, i) => (
             <motion.span
@@ -55,7 +50,8 @@ export function LettersPullUp({
               initial="initial"
               animate="animate"
               custom={i}
-              className="inline-block"
+              className="inline-block" // Changed to inline-block for transform
+              style={{ display: 'inline-block' }}
             >
               {ch === ' ' ? '\u00A0' : ch}
             </motion.span>

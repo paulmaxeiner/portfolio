@@ -73,6 +73,7 @@ export default function NavbarTabs() {
                     <h1 className="inter text-2xl font-bold text-4xl">
                         Creating powerful data-based solutions that grow <LettersPullUp
                         words ={ ['portfolios', 'businesses', 'people']}
+                        className='text-blue-600 dark:text-blue-400 font-bold'
                     />
                     </h1>
                     <span class="flex items-center mt-6">
