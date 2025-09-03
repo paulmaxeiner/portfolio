@@ -7,6 +7,7 @@ import Projects from './Projects.jsx';
 import ThemeToggleButton from './ThemeToggleButton.jsx';
 import ContactForm from './ContactForm.jsx';
 import Typewriter from './Typewriter.jsx';
+import Menu from './Menu.jsx';
 import { NumberTicker } from './NumberTicker.jsx';
 import { House } from 'lucide-react';
 import { motion } from "framer-motion";
@@ -27,7 +28,7 @@ export default function NavbarTabs() {
                 <ThemeToggleButton />
 
 
-
+<Menu/>
 
 
                 <div className="flex items-center space-x-5">
@@ -51,15 +52,27 @@ export default function NavbarTabs() {
 
 
                     </div>
-                    <div className="flex flex-col sm:ml-25">
-                        <button type="button" aria-label="LinkedIn" >
-                            <a href="https://www.linkedin.com/in/paulmaxeiner/" target="_blank">
+                    <div className="flex flex-row sm:ml-25">
+
+                        <button type="button" aria-label="GitHub" className="mr-1 group rounded-xl bg-white/90 px-1 py-1 hover:bg-gray-200 shadow-sm ring-1 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+                        >
+                            <a href="https://github.com/paulmaxeiner" target="_blank">
                                 <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
-                                    className='h-6 w-6'
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+                                    className='h-7 w-7 p-0.5'
                                 ></img>
                             </a>
                         </button>
+                        <button type="button" aria-label="LinkedIn" className="group rounded-xl bg-white/90 px-1 py-1 hover:bg-gray-200 shadow-sm ring-1 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+                        >
+                            <a href="https://www.linkedin.com/in/paulmaxeiner/" target="_blank">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+                                    className='h-7 w-7 p-0.5'
+                                ></img>
+                            </a>
+                        </button>
+
                     </div>
 
                 </div>
@@ -68,13 +81,17 @@ export default function NavbarTabs() {
                 </span>
 
                 <section id="hero" className="pt-15">
-                    
+
 
                     <h1 className="inter text-2xl font-bold text-4xl">
                         Creating powerful data-based solutions that grow <LettersPullUp
-                        words ={ ['portfolios', 'businesses', 'people']}
-                        className='text-blue-600 dark:text-blue-400 font-bold'
-                    />
+                            defaultColor="#334155"
+                            words={[
+                                { text: "portfolios", color: "#00cdac" },
+                                { text: "businesses", color: "#00a5e3" },
+                                { text: "people", color: "#ffa23a" },
+                            ]}
+                        />
                     </h1>
                     <span class="flex items-center mt-6">
                         <span class="uppercase font-semibold inter shrink-0 pe-4 text-gray-900 dark:text-white">Welcome to my personal website</span>
