@@ -7,6 +7,7 @@ import Projects from './Projects.jsx';
 import ThemeToggleButton from './ThemeToggleButton.jsx';
 import ContactForm from './ContactForm.jsx';
 import Typewriter from './Typewriter.jsx';
+import IconButton from './IconButton.jsx';
 import Menu from './Menu.jsx';
 import { NumberTicker } from './NumberTicker.jsx';
 import { House } from 'lucide-react';
@@ -28,7 +29,7 @@ export default function NavbarTabs() {
                 <ThemeToggleButton />
 
 
-<Menu/>
+                <Menu />
 
 
                 <div className="flex items-center space-x-5">
@@ -38,6 +39,8 @@ export default function NavbarTabs() {
                         alt="Profile"
                         className="w-16 h-16 rounded-full object-cover"
                     />
+
+
 
                     <div className="flex flex-col">
 
@@ -54,24 +57,8 @@ export default function NavbarTabs() {
                     </div>
                     <div className="flex flex-row sm:ml-25">
 
-                        <button type="button" aria-label="GitHub" className="mr-1 group rounded-xl bg-white/90 px-1 py-1 hover:bg-gray-200 shadow-sm ring-1 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
-                        >
-                            <a href="https://github.com/paulmaxeiner" target="_blank">
-                                <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
-                                    className='h-7 w-7 p-0.5'
-                                ></img>
-                            </a>
-                        </button>
-                        <button type="button" aria-label="LinkedIn" className="group rounded-xl bg-white/90 px-1 py-1 hover:bg-gray-200 shadow-sm ring-1 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
-                        >
-                            <a href="https://www.linkedin.com/in/paulmaxeiner/" target="_blank">
-                                <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
-                                    className='h-7 w-7 p-0.5'
-                                ></img>
-                            </a>
-                        </button>
+                        <IconButton iconLibrary="bootstrap" iconName="github" label="GitHub" onClick={() => window.open("https://github.com/paulmaxeiner", "_blank")} />
+                        <IconButton iconLibrary="bootstrap" iconName="linkedin" label="LinkedIn" onClick={() => window.open("https://www.linkedin.com/in/paulmaxeiner/", "_blank")} />
 
                     </div>
 
@@ -81,6 +68,7 @@ export default function NavbarTabs() {
                 </span>
 
                 <section id="hero" className="pt-15">
+
 
 
                     <h1 className="inter text-2xl font-bold text-4xl">
