@@ -91,15 +91,15 @@ export default function NavbarTabs() {
 
 
                 <section id="about">
-
                     <h1 className="section-head">About</h1>
                     <p>Hi, I’m Paul, a Financial Engineering student at WashU. I’m passionate about quantitative finance and love building data-driven strategies that bridge markets and math. I’ve worked in business development at Hunter Engineering and led teams at Starbucks, and now I’m diving deep into trading algorithms, stats, and all things quant.</p>
                 </section>
 
                 <section id="education">
                     <h1 className="section-head">Education</h1>
-
                     <div className="flex flex-col">
+
+                        {/* WashU */}
                         <div className="inline gap-5 items-center sm:flex">
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/WashU_St._Louis_seal.svg/1280px-WashU_St._Louis_seal.svg.png"
@@ -128,6 +128,38 @@ export default function NavbarTabs() {
 
                                 <div className="text-xs text-gray-500 dark:text-gray-400 sm:text-right">
                                     <p>May 2027</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        {/* NAHS */}
+                        <div className="inline gap-5 mt-10 items-center sm:flex">
+                            <img
+                                src="public/logos/nahs.svg"
+                                alt="Profile"
+                                className="w-12 h-12"
+                            />
+
+                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full gap-1">
+                                <div>
+                                    <p className="text-lg font-semibold">
+                                        New Albany High School
+                                    </p>
+
+                                    <p className="text-sm">
+                                        High School Diploma
+                                    </p>
+
+                                    <p className="text-sm mt-3">
+                                        <span className="font-bold">Honors: </span>
+                                        Summa Cum Laude, Honors Diploma, National Honor Society, National Merit Commended Scholar, AP Scholar with Distinction
+                                    </p>
+
+                                </div>
+
+                                <div className="text-xs text-gray-500 dark:text-gray-400 sm:text-right">
+                                    <p>May 2023</p>
                                 </div>
 
 
@@ -163,6 +195,11 @@ export default function NavbarTabs() {
                     <div class="flow-root">
                         <dl class="-my-3 divide-y divide-gray-200 dark:divide-gray-700 text-sm">
 
+
+                            <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3">
+                                <dt class="font-medium text-gray-900 dark:text-white">CliftonStrengths</dt>
+                                <dd class="text-gray-700 dark:text-gray-400 sm:col-span-2">Analytical, Input, Discipline, Futuristic, Individualization</dd>
+                            </div>
 
                             <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3">
                                 <dt class="font-medium text-gray-900 dark:text-white">Languages</dt>
