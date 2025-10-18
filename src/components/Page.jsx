@@ -92,7 +92,7 @@ export default function NavbarTabs() {
 
                 <section id="about">
                     <h1 className="section-head">About</h1>
-                    <p>Hi, I’m Paul, a Financial Engineering student at WashU. I’m passionate about quantitative finance and love building data-driven strategies that bridge markets and math. I’ve worked in business development at Hunter Engineering and led teams at Starbucks, and now I’m diving deep into trading algorithms, stats, and all things quant.</p>
+                    <p>Hi, I’m Paul, a Financial Engineering student at WashU. I bridge finance, data, and design by building tools that transform complexity into clarity and insight into action. I’m passionate about quantitative finance and data-driven strategies that combine markets and math. I’ve worked in business development at Hunter Engineering and led teams at Starbucks, and now I’m diving deep into trading algorithms, stats, and all things quant.</p>
                 </section>
 
                 <section id="education">
@@ -197,7 +197,7 @@ export default function NavbarTabs() {
 
 
                             <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3">
-                                <dt class="font-medium text-gray-900 dark:text-white">CliftonStrengths</dt>
+                                <dt class="font-medium text-gray-900 dark:text-white">Clifton Strengths</dt>
                                 <dd class="text-gray-700 dark:text-gray-400 sm:col-span-2">Analytical, Input, Discipline, Futuristic, Individualization</dd>
                             </div>
 
