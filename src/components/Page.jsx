@@ -25,14 +25,18 @@ export default function NavbarTabs() {
 
     return (
         <div className="">
+            <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-slate-100 to-white z-0 dark:z-[-1]"></div>
+
             <RevealList>
                 <ThemeToggleButton />
 
 
                 <Menu />
 
+                
 
-                <div className="flex items-center space-x-5">
+
+                <div className="flex items-center space-x-5 relative z-0 max-w-4xl mx-auto">
 
                     <img
                         src="https://avatars.githubusercontent.com/u/156957669?v=4"
@@ -67,7 +71,7 @@ export default function NavbarTabs() {
                     <span class="h-px flex-1 bg-gray-300 dark:bg-gray-700"></span>
                 </span>
 
-                <section id="hero" className="pt-15">
+                <section id="hero" className="pt-15 relative z-0 max-w-4xl mx-auto">
 
 
 
