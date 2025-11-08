@@ -2,7 +2,7 @@
   {
     "company": "Hunter Engineering Company",
     "logoUrl": "https://www.hunter.com/globalassets/hunter/header/hunter-logo-black-red.png",
-    "svgLogoUrl": "/logos/HUNTER.svg",
+    "svgLogoUrl": "logos/HUNTER.svg",
     "primaryColor": "#C00C00",
     "link": "https://www.hunter.com",
     "position": "Business Development Intern",
@@ -36,7 +36,7 @@
     "startDate": "12-2024",
     "endDate": "Present",
     "logoUrl": "https://media.licdn.com/dms/image/v2/D560BAQF9NZLlGFcpng/company-logo_200_200/company-logo_200_200/0/1723820513052/wustl_olin_business_school_logo?e=1756339200&v=beta&t=wth9wBKXWcIKmybVYqh0L0oPnqwOWle1K3y8195wsHw",
-    "svgLogoUrl": "public/logos/OLIN.svg",
+    "svgLogoUrl": "../logos/OLIN.svg",
     "primaryColor": "#BA0C2F",
     "link": "https://olin.wustl.edu",
     "description": [
@@ -59,7 +59,7 @@
     "startDate": "8-2024",
     "endDate": "Present",
     "logoUrl": "https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/455816737_949269377213233_4748526633256642067_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OJf0TUzoau0Q7kNvwH5c-G4&_nc_oc=AdnI_ScLDCdUCZZ924zKxAKbQ079jCdKj3xwNn-e748LfI7oBBwv_a7QtSzvJMRbJhXPiDdLRNUq0Lt5TbcLCjVB&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=4ul6FmLyFQ7oWZsLDN2a6w&oh=00_AfQ_9qFNcKkO61QwV4wibDIkItVrZEuk9JRo4i-eJeXNHg&oe=68862B1F",
-    "svgLogoUrl": "public/logos/OLIN.svg",
+    "svgLogoUrl": "logos/OLIN.svg",
     "primaryColor": "#000035",
     "link": "https://physics.wustl.edu/resources/crow-observatory",
     "description": [
@@ -82,7 +82,7 @@
     "startDate": "5-2024",
     "endDate": "9-2024",
     "logoUrl": "https://globalassets.hunter.com/images/assets/logo-hunter-white.svg/Zz0xMDQ1NjM2ODZhNzExMWVkYjczNTY2ZmJkYjdjZjg4OA==",
-    "svgLogoUrl": "public/logos/HUNTER.svg",
+    "svgLogoUrl": "logos/HUNTER.svg",
     "primaryColor": "#C00C00",
     "link": "https://www.hunter.com",
     "description": [
