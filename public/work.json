@@ -2,7 +2,7 @@
   {
     "company": "Hunter Engineering Company",
     "logoUrl": "https://www.hunter.com/globalassets/hunter/header/hunter-logo-black-red.png",
-    "svgLogoUrl": "logos/HUNTER.svg",
+    "svgLogoUrl": "/logos/HUNTER.svg",
     "primaryColor": "#C00C00",
     "link": "https://www.hunter.com",
     "position": "Business Development Intern",
