@@ -18,6 +18,7 @@ import Footer from './Footer.jsx';
 import TechSection from './TechCard.jsx';
 import { LettersPullUp } from './LettersPullUp.jsx';
 import WorkExperience from './WorkExperience.jsx';
+import ProfessionalExperience_Cards from './ProfessionalExperience_Cards.jsx';
 import ProfessionalExperience from './ProfessionalExperience.jsx';
 
 export default function NavbarTabs() {
@@ -181,6 +182,11 @@ export default function NavbarTabs() {
                 <section id="professional-experience">
                     <h1 className="section-head">Professional Experience</h1>
                     <ProfessionalExperience />
+                </section>
+
+                <section id="professional-experience-cards">
+                    <h1 className="section-head">Professional Experience</h1>
+                    <ProfessionalExperience_Cards />
                 </section>
 
                 <section id="projects">

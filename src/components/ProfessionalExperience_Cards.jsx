@@ -57,17 +57,25 @@ export default function WorkExperience() {
     <div className="">
       {jobs.map((job, index) => (
         <div key={index} className="flex flex-col bg-white dark:bg-gray-900">
-          <div className="inline mt-4 gap-3 items-start sm:flex">
+          <div className="inline mt-4 gap-3 items-start sm:flex border-1 p-4 rounded-lg">
 
-            {/* Logo Column */}
-            <img
-              src={job.logoUrl}
-              alt={`${job.company} logo`}
-              className="w-12 h-12 object-contain shadow-sm rounded-sm border-white border-3 bg-white"
-            />
+
+
 
             {/* Content */}
+
             <div className="flex-1 w-full">
+
+
+              {/* Logo Column */}
+              <img
+                src={job.svgLogoUrl}
+                alt={`${job.company} logo`}
+                className={"w-12 h-12 object-contain shadow-sm rounded-sm border-white p-2"}
+                style={{ backgroundColor: job.primaryColor || '#000000'}}
+              />
+
+
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full gap-1">
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -79,57 +87,23 @@ export default function WorkExperience() {
                   <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
                     <MapPin className="w-[1em] h-[1em] inline-block" /> {job.location}
                   </span>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    <p>
+                      <Calendar className="w-[1em] h-[1em] inline-block" />{" "}
+                      {formatMonthYear(job.startDate)} – {formatMonthYear(job.endDate)}
+                    </p>
+                    <p><DateDiff start={job.startDate} end={job.endDate} /></p>
+                  </div>
                 </div>
 
-                <div className="text-xs text-gray-500 dark:text-gray-400 sm:text-right">
-                  <p>
-                    <Calendar className="w-[1em] h-[1em] inline-block" />{" "}
-                    {formatMonthYear(job.startDate)} – {formatMonthYear(job.endDate)}
-                  </p>
-                  <p><DateDiff start={job.startDate} end={job.endDate} /></p>
-                </div>
+
               </div>
 
               {/* Description */}
-              <ul className="text-sm mt-2 text-gray-700 dark:text-gray-300 list-disc list-inside">
-                {job.description?.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
+
 
               {/* Skills */}
-              {job.skills?.length > 0 && (
-                <div className="mb-5">
-                  <h5 className="text-sm font-semibold mt-4">Skills</h5>
-
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {job.skills.map((skill, i) => (
-                      <span
-                        key={i}
-                        className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-gray-200 dark:bg-zinc-700 text-gray-800 dark:text-gray-100"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
               {/* Technologies */}
@@ -155,7 +129,7 @@ export default function WorkExperience() {
                 </div>
               )}
               */}
-              
+
 
             </div>
           </div>
