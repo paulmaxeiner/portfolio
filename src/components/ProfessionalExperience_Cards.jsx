@@ -57,10 +57,15 @@ export default function WorkExperience() {
     <div className="">
       {jobs.map((job, index) => (
         <div key={index} className="flex flex-col bg-white dark:bg-gray-900">
-          <div className="inline mt-4 gap-3 items-start sm:flex border-1 p-4 rounded-lg">
+          <div className="inline mt-4 gap-3 items-start sm:flex p-4 rounded-lg">
 
 
-
+<img
+                src={job.svgLogoUrl}
+                alt={`${job.company} logo`}
+                className={"w-12 h-12 object-contain shadow-sm object-center rounded-sm border-white p-2"}
+                style={{ backgroundColor: job.primaryColor || '#000000'}}
+              />
 
             {/* Content */}
 
@@ -68,17 +73,12 @@ export default function WorkExperience() {
 
 
               {/* Logo Column */}
-              <img
-                src={job.svgLogoUrl}
-                alt={`${job.company} logo`}
-                className={"w-12 h-12 object-contain shadow-sm rounded-sm border-white p-2"}
-                style={{ backgroundColor: job.primaryColor || '#000000'}}
-              />
-
+              
 
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full gap-1">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white"
+                  style={{ color: job.primaryColor || '#000000' }}>
                     {job.position}
                   </h3>
                   <h4 className="text-md text-gray-900 dark:text-white">
