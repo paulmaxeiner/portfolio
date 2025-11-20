@@ -19,7 +19,7 @@
 }
 
 .section-head {
-  @apply text-xl rounded w-max pb-3 pt-4;
+  @apply text-3xl rounded w-max pb-3 pt-4;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
