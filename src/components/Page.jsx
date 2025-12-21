@@ -32,7 +32,7 @@ export default function NavbarTabs() {
                 <ThemeToggleButton />
 
 
-                <Menu />
+                
 
                 
 
@@ -68,11 +68,11 @@ export default function NavbarTabs() {
                     </div>
 
                 </div>
-                <span class="mt-5 flex items-center">
-                    <span class="h-px flex-1 bg-gray-300 dark:bg-gray-700"></span>
-                </span>
+
 
                 <section id="hero" className="pt-15 relative z-0 max-w-4xl mx-auto">
+
+                    <h1>Hi 👋, I'm Paul</h1>
 
 
 
