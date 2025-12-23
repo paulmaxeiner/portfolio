@@ -179,10 +179,10 @@ export default function NavbarTabs() {
 
                 </section>
 
-                <section id="professional-experience">
+                {/* <section id="professional-experience">
                     <h1 className="section-head">Professional Experience</h1>
                     <ProfessionalExperience />
-                </section>
+                </section> */}
 
                 <section id="professional-experience-cards">
                     <h1 className="section-head">Professional Experience</h1>
